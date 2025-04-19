@@ -1,38 +1,46 @@
-.App {
+/* App.css */
+.login-container {
   text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Make sure button is an inline element */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #0056b3;
+}
+
+.google-login-btn {
+  background-color: #db4437;
+}
+
+.google-login-btn:hover {
+  background-color: #c1351d;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Add some space and prevent the buttons from overlapping */
+.login-container form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
